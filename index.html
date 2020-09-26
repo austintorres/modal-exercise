@@ -123,7 +123,6 @@
         top: -300px;
         opacity: 0
       }
-
       to {
         top: 0;
         opacity: 1
@@ -135,23 +134,37 @@
         top: -300px;
         opacity: 0
       }
-
       to {
         top: 0;
         opacity: 1
       }
     }
 
-    /* Carousel */
-    .carousel-indicators li {
-      background-color: rgb(196, 196, 196);
-      width: 6px;
-      height: 6px;
-      border-radius: 100%;
-    }
+    /* Media queries */
+    @media screen and (max-width: 1000px) {
 
-    .carousel-indicators .active {
-      background-color: #0d243a;
+      .open-button {
+        top: 250px;
+      }
+
+
+      .modal-body {
+        margin: auto;
+        width: 380px;
+
+      }
+
+      /* Carousel */
+      .carousel-indicators li {
+        background-color: rgb(196, 196, 196);
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+      }
+
+      .carousel-indicators .active {
+        background-color: #0d243a;
+      }
     }
   </style>
 </head>
@@ -198,5 +211,4 @@
     }
   </script>
 </body>
-
 </html>
